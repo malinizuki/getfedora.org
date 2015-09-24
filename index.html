@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fedora</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+ <body class="home">
+  <div class="head">
+  	<div class="container">
+    <div class="row product-header">
+      <div class="col-xs-6 text-left">
+       <a href="${path}/${lang}/"><img class="fedoralogo" src="images/fedoraicon.png" alt="Fedora Logo" /></a>
+      </div>
+      <div class="col-xs-6 text-right">
+        <a href="${path}/${lang}/"><img class="fedoralogotext" src="images/fedoralogo.png" alt="Fedora Logotext" /></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <header id="head" class="main-head">
+  	<div class="title">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-xs-8 col-xs-offset-2">
+	            <h1 class="thin">Fedora is now more focused</h1>
+	            <h4 class="thin">Less setup, more innovation. Choose a flavor of Fedora streamlined for your needs, and get to work right away.</h4>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="fedora-blocks">
+	    <div class="container">
+	      <div class="row bottom-space">
+	        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+	            <div class="productitem-logo">
+	                <div class="h-caption greyscale"></div>
+	                <div class="h-caption color"></div>
+                  <div class="i w-icon"></div>
+                  <h4 class="uppercase">Workstation</h4>
+	            </div>
+	            <div class="h-body">
+	              <p>Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.</p>
+	            </div>
+	        <a href="../${lang}/workstation">Download now</a>
+	        </div>
+	        <div class="col-sm-4 col-xs-12 highlight productitem server">
+	            <div class="productitem-logo">
+	                <div class="h-caption greyscale"></div>
+	                <div class="h-caption color"></div>
+                  <div class="i s-icon"></div>
+                  <h4 class="uppercase">Server</h4>
+	            </div>
+	            <div class="h-body">
+	              <p>Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.</p>
+	            </div>
+	        <a href="../${lang}/server">Download now</a>
+	        </div>
+	        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+	            <div class="productitem-logo">
+	                <div class="h-caption greyscale"></div>
+	                <div class="h-caption color"></div>
+                  <div class="i c-icon"></div>
+                  <h4 class="uppercase">Atomic</h4>
+	            </div>
+	            <div class="h-body">
+	              <p>Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials making it very light on resources, but you get enough to run your cloud application.</p>
+	            </div>
+	        <a href="../${lang}/cloud">Download now</a>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+  </header>
+
+    <div class="community text-center">
+      <div class="container">
+      <div class="icons-community row">
+        <div class="col-xs-6 col-sm-3 ic freedom"><img src="images/micon1.png"></div>
+        <div class="col-xs-6 col-sm-3 ic friends"><img src="images/micon2.png"></div>
+        <div class="col-xs-6 col-sm-3 ic features"><img src="images/micon3.png"></div>
+        <div class="col-xs-6 col-sm-3 ic first"><img src="images/micon4.png"></div>
+      </div>
+      <div class="h-body text-justify">
+        <h4 class="thin">Fedora is always free for anyone to use, modify, and distribute. It is built and used by people across the globe who work together as a community: the Fedora Project.</h4>
+      </div>
+      </div>
+    </div>
+
+  <!-- container -->
+  <div class="background">
+    <div class="container top-space">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2">
+          <h4>${_('Keep up to date with Fedora')}</h4>
+          <p class="thin">${Markup(_('Stay connected with the Fedora Project and get all the latest news and reports in &lt;a href="%s"&gt;Fedora Magazine&lt;/a&gt;.') % ('http://fedoramagazine.org/'))}</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>${_('Fedora Documentation')}</h4>
+          <p class="thin">${Markup(_('Check out the &lt;a href="%s"&gt;Release Notes&lt;/a&gt; for detailed information on the current release. To learn more about using Fedora and details such as system requirements, see the &lt;a href="%s"&gt;official documentation&lt;/a&gt;.') % ('http://docs.fedoraproject.org/en-US/Fedora/' + global_variables.release['curr_id'] + '/html/Release_Notes/index.html', 'http://docs.fedoraproject.org/'))}</p>
+        </div>
+      </div> <!-- /row -->
+      <div class="row  bottom-space">
+        <div class="col-sm-4 col-sm-offset-2">
+          <h4>${_('Looking for more Fedora?')}</h4>
+          <p class="thin">${Markup(_('The Fedora community also releases &lt;a href="%s"&gt;ARM images&lt;/a&gt;, alternate live Spins, and other variations of Fedora tailored to specific requirements. Browse them at the &lt;a href="%s"&gt;Fedora Spins&lt;/a&gt; or &lt;a href="%s"&gt;Fedora Labs&lt;/a&gt; website.') % ('https://arm.fedoraproject.org/', 'https://spins.fedoraproject.org/', 'https://labs.fedoraproject.org/'))}</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>${_('Getting Help')}</h4>
+          <p class="thin">${Markup(_('Need some help with Fedora? Ask a question at &lt;a href="%s"&gt;Ask Fedora&lt;/a&gt;, email other users on the &lt;a href="%s"&gt;mailing lists&lt;/a&gt;, or chat realtime in the &lt;a href="%s"&gt;IRC Channels&lt;/a&gt;.') % ('http://ask.fedoraproject.org/', 'http://fedoraproject.org/wiki/Communicate#Mailing_Lists', 'http://fedoraproject.org/wiki/Communicate#IRC_for_interactive_community_support'))}</p>
+        </div>
+      </div> <!-- /row -->
+    </div>  <!-- /container -->
+  </div>
+
+
+  <footer id="footer">
+
+        <div class="foot">
+            <div class="container">
+                <div class="row footerlinks">
+                    <div class="col-sm-3 col-xs-6 widget">
+                        <h3 class="widget-title">${_('About')}</h3>
+                        <div class="widget-body">
+                            <dl>
+                                <dd><a href="//fedoraproject.org/wiki/Overview">${_('About Fedora')}</a></dd>
+                                <dd><a href="${path}/${lang}/sponsors">${_('Sponsors')}</a></dd>
+                                <dd><a href="http://fedoramagazine.org">${_('Fedora Magazine')}</a></dd>
+                                <dd><a href="https://fedoraproject.org/wiki/Legal:Main#Legal">${_('Legal')}</a></dd>
+                            </dl>
+                            <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/TheFedoraProject" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/112917221531140868607" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/fedora" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-6 widget">
+                        <h3 class="widget-title uppercase">${_('Download')}</h3>
+                        <div class="widget-body">
+                          <dl>
+                            <dd><a href="${path}/${lang}/workstation/download">${_('Get Fedora Workstation')}</a></dd>
+                            <dd><a href="${path}/${lang}/server/download">${_('Get Fedora Server')}</a></dd>
+                            <dd><a href="${path}/${lang}/cloud/download">${_('Get Fedora Cloud')}</a></dd>
+                            <dd><a href="//spins.fedoraproject.org">${_('Fedora Spins')}</a></dd>
+                            <dd><a href="//labs.fedoraproject.org">${_('Fedora Labs')}</a></dd>
+                            <dd><a href="//arm.fedoraproject.org">${Markup(_('Fedora ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt;'))}</a></dd>
+                            <dd><a href="http://torrents.fedoraproject.org/">${_('Torrent Downloads')}</a></dd>
+
+                        </dl>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-6 widget">
+                        <h3 class="widget-title">${_('Support')}</h3>
+                        <div class="widget-body">
+                            <dl>
+                                <dd><a href="//fedoraproject.org/wiki/Communicating_and_getting_help">${_('Get Help')}</a></dd>
+                                <dd><a href="//ask.fedoraproject.org/">${_('Ask Fedora')}</a></dd>
+                                <dd><a href="http://fedoraforum.org/">${_('Forums')}</a></dd>
+                                <dd><a href="//fedoraproject.org/wiki/Common_F${global_variables.release['curr_id']}_bugs">${_('Common Bugs')}</a></dd>
+                                <dd><a href="//docs.fedoraproject.org/en-US/Fedora/${global_variables.release['curr_id']}/html/Installation_Guide">${_('Installation Guide')}</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-6 widget">
+                        <h3 class="widget-title">${_('Join')}</h3>
+                        <div class="widget-body">
+                            <dl>
+                                <dd><a href="//fedoraproject.org/wiki/Join">${_('Join Fedora')}</a></dd>
+                                <dd><a href="http://fedoraplanet.org">${_('Planet Fedora')}</a></dd>
+                                <dd><a href="//fedoraproject.org/wiki/SIGs">${_('Fedora SIGs')}</a></dd>
+                                <dd><a href="//admin.fedoraproject.org/accounts/">${_('Fedora Account System')}</a></dd>
+                                <dd><a href="http://fedoracommunity.org/">${_('Fedora Community')}</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div> <!-- /row of widgets -->
+
+            </div>
+        </div>
+  </footer>
+</body>
+</html>

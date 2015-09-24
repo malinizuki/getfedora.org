@@ -1,0 +1,19 @@
+ @media (max-width: 1200px) {
+	.h-body{
+		height:150px;
+	}
+}
+
+ @media (max-width: 768px) {
+	.productitem .color{
+		margin:10px auto;
+	}
+	.h-body{
+		margin:0 auto;
+		width:350px;
+		height:110px;
+	}
+	.productitem a{
+		margin-bottom:20px;
+	}
+}
