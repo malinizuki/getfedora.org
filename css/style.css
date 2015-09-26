@@ -1,7 +1,18 @@
-
+.container{
+	max-width:1170px;
+}
+h1{
+	font-size:36px;
+}
+h4{
+	font-size:30px;
+}
+p{
+	font-size:15px;
+}
 /* body */
 .home{
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Varela Round";
 	background:url('background/background.png') no-repeat 50% 50% #fff;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -10,14 +21,19 @@
 /* logo line */
 .head{
 	width:100%;
-	height:120px;
-	line-height:120px;
+	height:90px;
+	line-height:90px;
 	background:#fff;
 	-webkit-box-shadow: 0 4px 8px -4px #000000;
    -moz-box-shadow: 0 4px 8px -4px #000000;
         box-shadow: 0 4px 8px -4px #000000;
 }
-
+.fedoralogotext{
+	height:39px;
+}
+.fedoralogo{
+	height:49px;
+}
 /* header */
 .title{
 	padding:5% 0;
@@ -29,7 +45,7 @@
 .fedora-blocks{
 	padding-bottom:20px;
 	width:100%;
-	min-height:750px;
+	min-height:630px;
 	background:#fff;
 	-webkit-box-shadow: 0 4px 8px -4px #000000;
    -moz-box-shadow: 0 4px 8px -4px #000000;
@@ -37,42 +53,53 @@
 }
 .productitem{
 	text-align:center;
-
 }
 .productitem-logo{
 	cursor:pointer;
 }
-.productitem a{
+.download{
 	text-transform:uppercase;
 	color:#fff;
 	background:#294172;
 	padding:7px;
 	border-radius:5px;
+	transition: all .3s ease;
 }
-.productitem a:hover{
+.download:hover, .download:focus, .download:active{
 	color:#fff;
 	text-decoration:none;
 }
-.productitem .color{
-	margin-top:60px;
-	max-width:350px;
-	height:350px;
+.dw:hover{
+	background:#6ccc24;
 }
-.productitem h4{
+.ds:hover{
+	background:#c4811a;
+}
+.dc:hover{
+	background:#9066b1;
+}
+.productitem .color{
+	margin:60px auto 0 auto;
+	max-width:300px;
+	height:300px;
+}
+.productitem h1{
 	margin-bottom:60px;
+	font-size:32px;
 	text-transform:uppercase;
-	font-size:250%;
 	text-align:center;
 	color:#fff;
 }
-.i{
-	margin:-270px auto 40px auto;
-	width:150px;
-	height:150px;
-}
-.h-body{
+.productitem .h-body{
+	margin:0 auto;
 	height:140px;
 	overflow:hidden;
+	max-width:300px;
+}
+.i{
+	margin:-230px auto 35px auto;
+	width:120px;
+	height:120px;
 }
 .workstation .color{
 	background:url('icons/background1.png') no-repeat 50% 50%;
@@ -122,8 +149,8 @@
 }
 .ic img{
 	margin:50px auto;
-	width:240px;
-	height:240px;
+	width:200px;
+	height:200px;
 }
 .community .thin{
 	width:90%;
@@ -137,4 +164,69 @@
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
+}
+.block{
+	padding:20px 0;
+	height:340px;
+	width:100%;
+}
+.right{
+	text-align:right;
+}
+.options{
+	margin-left:50px;
+	text-align:center;
+}
+.options .op{
+	margin: 20px 10px 0 10px;
+	display:inline-block;
+}
+.op img{
+	width:70px;
+}
+.informlogo{
+	margin-top:15px;
+	width:125px;
+}
+.help-block h1, .help-block h4{
+	color:#000;
+
+}
+.border{
+	height:3px;
+	width:100%;
+	background:#294172;
+}
+.side-border{
+	height:3px;
+	width:50%;
+	margin-top:-3px;
+	background:#294172;
+}
+.border-left{
+	float:left;
+	margin-left:5px;
+}
+.border-right{
+	float:right;
+	margin-right:5px;
+}
+.askfedoralogo{
+	margin-top:50px;
+	float:right;
+	height:60px;
+}
+/* footer */
+footer{
+	color: #8D8D8D;
+	padding-top:40px;
+	height:300px;
+}
+footer h3{
+	text-transform:uppercase;
+	font-size:16px;
+	font-weight:bold;
+}
+footer a, footer a:hover{
+	color: #000;
 }

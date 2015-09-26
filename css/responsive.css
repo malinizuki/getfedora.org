@@ -8,12 +8,36 @@
 	.productitem .color{
 		margin:10px auto;
 	}
-	.h-body{
+	.productitem .h-body{
 		margin:0 auto;
-		width:350px;
-		height:110px;
+		width:230px;
+		height:180px;
 	}
 	.productitem a{
-		margin-bottom:20px;
+		margin-bottom:40px;
+	}
+	.ic img{
+		width:170px;
+		height:170px;
+	}
+	.options{
+		position:absolute;
+		margin-left:0;
+		width:400px;
+	}
+	.op img{
+		width:50px;
+		height:50px;
+	}
+	.informlogo{
+		position:absolute;
+		width:100px;
+		margin-top:180px;
+	}
+	.right{
+	text-align:left;
+	}
+	.askfedoralogo{
+		float:none;
 	}
 }
