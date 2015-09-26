@@ -3,7 +3,12 @@
 		height:150px;
 	}
 }
-
+ @media (max-width: 800px) {
+ 	.ic img{
+ 		width:150px;
+ 		height:150px;
+ 	}
+}
  @media (max-width: 768px) {
 	.productitem .color{
 		margin:10px auto;
@@ -22,8 +27,9 @@
 	}
 	.options{
 		position:absolute;
+		text-align:center;
 		margin-left:0;
-		width:400px;
+		width:250px;
 	}
 	.op img{
 		width:50px;
@@ -39,5 +45,35 @@
 	}
 	.askfedoralogo{
 		float:none;
+	}
+}
+@media (max-width: 537px) {
+	.options{
+		width:400px;
+	}
+}
+@media (max-width: 480px) {
+	.op img{
+		width:35px;
+		height:35px;
+	}
+}
+@media (max-width:360px) {
+	.fedoralogotext{
+		height:20px;
+	}
+	.ic img{
+		width:120px;
+		height:120px;
+	}
+	.block{
+		height:450px;
+	}
+	.options{
+		width:300px;
+		text-align:center;
+	}
+	.informlogo{
+		margin-top:250px;
 	}
 }
