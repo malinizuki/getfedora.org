@@ -219,8 +219,9 @@ p{
 /* footer */
 footer{
 	color: #8D8D8D;
+	background:#e6e6e6;
 	padding-top:40px;
-	height:300px;
+	min-height:300px;
 }
 footer h3{
 	text-transform:uppercase;
